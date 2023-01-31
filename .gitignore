@@ -2,4 +2,5 @@ config.h
 drw.o
 dwm
 dwm.o
+patches
 util.o
