@@ -2,5 +2,7 @@ config.h
 drw.o
 dwm
 dwm.o
+*.orig
 patches
+*.rej
 util.o
