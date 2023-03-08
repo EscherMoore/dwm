@@ -108,7 +108,9 @@ static const Key keys[] = {
     { 0,                XF86XK_AudioMute,      spawn,          {.v = mutevol } },
     { 0,                    XF86XK_Eject,      spawn,          {.v = mutemic } },
     { 0,                 XF86XK_PowerOff,      spawn,          {.v = suspend } },
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+    { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+    { 0,                        XK_Print,      spawn,          SHCMD("flameshot screen -c -p ~/pics/screenshots/")},
+    { MODKEY,                   XK_Print,      spawn,          SHCMD("flameshot gui -c -p ~/pics/screenshots/")},
 };
 
 /* button definitions */
