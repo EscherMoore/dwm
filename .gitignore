@@ -6,3 +6,4 @@ dwm.o
 patches
 *.rej
 util.o
+system_specific_keybinds.h

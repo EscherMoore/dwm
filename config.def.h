@@ -1,5 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 #include <X11/XF86keysym.h>
+#include "system_specific_keybinds.h"
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -111,6 +112,7 @@ static const Key keys[] = {
     { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
     { 0,                        XK_Print,      spawn,          SHCMD("flameshot screen -c -p ~/pics/screenshots/")},
     { MODKEY,                   XK_Print,      spawn,          SHCMD("flameshot gui -c -p ~/pics/screenshots/")},
+    SYSTEM_SPECIFIC_KEYBINDS
 };
 
 /* button definitions */
